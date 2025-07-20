@@ -35,9 +35,9 @@
       <div style="width: fit-content;margin-left: auto;margin-right: auto;">
         <span style="color:var(--el-color-info);font-size: 12px;">
           本工具由
-            <el-link style="vertical-align: -2px;" type="info" @click='open("https://www.kuocaicdn.com/register?code=8z8urvbg2ffd9")' target="_blank">
-              <img src="https://www.kuocaicdn.com/dashboard/assets/svg/logos/logo-short.svg" alt="括彩CDN" width="15" height="15">
-              括彩云智能CDN
+            <el-link style="vertical-align: -2px;" type="info" @click='open("https://edgeone.ai/zh?from=net.netart.cn")' target="_blank">
+              <img src="https://edgeone.ai/favicon.ico" alt="括彩CDN" width="15" height="15">
+              Tencent Edgeone
             </el-link>
           提供CDN服务
         </span>
@@ -46,7 +46,7 @@
   </el-container>
   <el-dialog align-center style="width: 90%;max-width: 700px;" v-model="downLoadAPPTableVisible" title="APP下载">
     <div>
-      <el-button style="float:right;margin-top: -5px;" type="primary" @click="open('https://api.netart.cn/d?b013x15cb')">
+      <el-button style="float:right;margin-top: -5px;" type="primary" @click="open('https://cdn.netart.cn/network-panel-app/v3.2.2.apk')">
           下载最新版
       </el-button> 
       <h2>网络面板APP</h2>
@@ -58,6 +58,12 @@
     </div>
     <div>
       <h2>更新日志</h2>
+	  <div>
+        <h3>v3.2.2</h3>
+        <p>
+		  修复数据上报问题<br>
+        </p>
+      </div>
 	  <div>
         <h3>v3.2.1</h3>
         <p>
@@ -152,14 +158,9 @@
       <span>开源地址：<el-link @click='open("https://github.com/ljxi/NetworkPanel")' type="primary">NetworkPanel</el-link>&nbsp;
         <el-link @click='open("https://github.com/ljxi/GeoCN")' type="primary">GeoCN</el-link>
       </span><br> 
-      <span>赞助支持：
-        <el-link @click='open("https://afdian.net/a/ljxnet")' type="primary">爱发电</el-link>&nbsp
-        <el-link @click='open("https://qr.alipay.com/fkx13781i79xywfarbvrsfc")' type="primary">支付宝</el-link>
-      </span><br>
       <span>特别感谢：</span><br>
+      <el-link @click='open("https://edgeone.ai/zh?from=net.netart.cn")' type="primary">Tencent Edgeone</el-link><span>提供免费稳定无限量的CDN服务</span><br>
       <el-link @click='open("https://www.kuocaicdn.com/register?code=8z8urvbg2ffd9")' type="primary">括彩科技</el-link><span>提供免费稳定的CDN服务</span><br>
-      <el-link @click='open("https://staticfile.org/")' type="primary">七牛云</el-link><span>提供免费稳定的前端静态资源分发服务</span><br>
-      <el-link @click='open("https://www.bootcdn.cn/")' type="primary">BootCDN</el-link><span>提供免费稳定的前端静态资源分发服务</span><br>
       <br>
       <span>本项目用到的开源库:</span><br>
       <el-link @click='open("https://github.com/vuejs/core")' type="primary">Vue</el-link>&nbsp
